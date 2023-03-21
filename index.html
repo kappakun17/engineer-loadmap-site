@@ -373,9 +373,9 @@
       <div class="modal-url" id='modal-url'></div>
       <div class="modal-learning" id="modal-learning"></div>
 
-      <div class="colse-div">
+      <!-- <div class="colse-div">
           <button class="close-btn" id="close-btn">閉じる</button>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -571,7 +571,7 @@
     const modalExample = document.getElementById('modal-example');
     const modalUrl = document.getElementById('modal-url')
     const modalLearning = document.getElementById('modal-learning')
-    const closeBtn = document.getElementById('close-btn');
+    //const closeBtn = document.getElementById('close-btn');
 
     for (let categoryK in category) {
         categoryContainer.innerHTML += `
@@ -590,9 +590,9 @@
 
     addModalFeature()
 
-    closeBtn.addEventListener('click', () => {
-      modal.style.display = 'none';
-    });
+    //closeBtn.addEventListener('click', () => {
+      //modal.style.display = 'none';
+    //});
     document.querySelector(".modal").addEventListener('click', ()=>{
         modal.style.display = 'none'
     })
