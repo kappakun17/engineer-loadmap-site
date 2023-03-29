@@ -716,12 +716,12 @@
         "software-engineer": [
             {
                 "title": "ToDoリストアプリ",
-                "url": "https://techacademy.jp/magazine/21852",
+                "url": "https://qiita.com/bookma/items/aba1c616a518235edc4d",
                 "description": "タスク管理ができるシンプルなアプリケーション。タスクの追加、削除、完了の機能がある。"
             },
             {
                 "title": "簡易的なチャットアプリ",
-                "url": "https://qiita.com/nkkn/items/2cfb9f0179b5a5f5e2cc",
+                "url": "https://qiita.com/TowelMan-public/items/ace6cf893c3799445a4c",
                 "description": "複数のユーザーがリアルタイムでチャットできるアプリケーション。WebSocketを使用して通信を行う。"
             },
             {
@@ -733,17 +733,17 @@
         "frontend-engineer": [
             {
                 "title": "ポートフォリオWebサイト",
-                "url": "https://www.webprofessional.jp/how-to-build-a-stunning-portfolio-website-as-a-web-developer/",
+                "url": "https://qiita.com/OnodaSan/items/21cbb371bf1381fa5380",
                 "description": "自分のスキルや経験を紹介するポートフォリオ用のウェブサイト。レスポンシブデザインでデバイスに適応。"
             },
             {
                 "title": "イベント管理Webアプリ",
-                "url": "https://www.webprofessional.jp/react-application/",
+                "url": "https://qiita.com/mugendai23/items/cc7c609c572668ec1f3d",
                 "description": "イベントの作成、編集、削除ができるイベント管理アプリ。参加者管理機能もある。"
             },
             {
                 "title": "レスポンシブデザインのECサイトテンプレート",
-                "url": "https://coliss.com/articles/build-websites/operation/css/css-flexbox-examples-layout.html",
+                "url": "https://qiita.com/wadakatu/items/e9e9ff3a69a4228f967c",
                 "description": "商品の閲覧・購入ができる電子商取引サイトのテンプレート。スマートフォンやタブレットにも対応。"
             }
         ],
@@ -1205,7 +1205,6 @@
             <div class="modal-portfolio-card">
                 <div class="title">${index + 1}. ${portfolio.title}</div>
                 <div class="description">${portfolio.description}</div>
-                <a href="${portfolio.url}" target="_brank" class="url">${portfolio.url}</a>
             </div>
             `
         })
