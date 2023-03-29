@@ -712,6 +712,365 @@
 
     }
     
+    const portfolio = {
+        "software-engineer": [
+            {
+                "title": "ToDoリストアプリ",
+                "url": "https://techacademy.jp/magazine/21852",
+                "description": "タスク管理ができるシンプルなアプリケーション。タスクの追加、削除、完了の機能がある。"
+            },
+            {
+                "title": "簡易的なチャットアプリ",
+                "url": "https://qiita.com/nkkn/items/2cfb9f0179b5a5f5e2cc",
+                "description": "複数のユーザーがリアルタイムでチャットできるアプリケーション。WebSocketを使用して通信を行う。"
+            },
+            {
+                "title": "ブログ投稿プラットフォーム",
+                "url": "https://qiita.com/kimihiro_n/items/86e0a9e619720e57ecd8",
+                "description": "ユーザーが記事を投稿・編集・削除できるブログプラットフォーム。記事の閲覧機能もある。"
+            }
+        ],
+        "frontend-engineer": [
+            {
+                "title": "ポートフォリオWebサイト",
+                "url": "https://www.webprofessional.jp/how-to-build-a-stunning-portfolio-website-as-a-web-developer/",
+                "description": "自分のスキルや経験を紹介するポートフォリオ用のウェブサイト。レスポンシブデザインでデバイスに適応。"
+            },
+            {
+                "title": "イベント管理Webアプリ",
+                "url": "https://www.webprofessional.jp/react-application/",
+                "description": "イベントの作成、編集、削除ができるイベント管理アプリ。参加者管理機能もある。"
+            },
+            {
+                "title": "レスポンシブデザインのECサイトテンプレート",
+                "url": "https://coliss.com/articles/build-websites/operation/css/css-flexbox-examples-layout.html",
+                "description": "商品の閲覧・購入ができる電子商取引サイトのテンプレート。スマートフォンやタブレットにも対応。"
+            }
+        ],
+        "backend-engineer": [
+            {
+                "title": "RESTful APIを使用した簡易的なWebサービス",
+                "url": "https://qiita.com/mserizawa/items/1d7e5c97bb5cc8df917f",
+                "description": "RESTful APIを使用してデータの作成、読み込み",
+            },
+            {
+                "title": "リアルタイムチャットアプリ",
+                "url": "https://qiita.com/dossy007/items/3ca1f2d270a0c909aba9",
+                "description": "WebSocketを使用してリアルタイムにメッセージの送受信が可能なチャットアプリケーションのバックエンド開発。"
+            },
+            {
+                "title": "GraphQL API開発",
+                "url": "https://qiita.com/ryu_sei/items/731b96f9968da5e7ac88",
+                "description": "GraphQLを使用したAPI開発。柔軟なクエリ言語により効率的なデータ取得が可能なバックエンドシステム。"
+            }
+        ],
+        "fullstack-engineer": [
+            {
+                "title": "簡易的なECサイト",
+                "url": "https://qiita.com/TsutomuNakamura/items/4986350c6df1f92c8fbb",
+                "description": "商品の閲覧・購入ができる簡易的なECサイト。フロントエンドとバックエンドの両方を実装。"
+            },
+            {
+                "title": "個人向け財務管理アプリ",
+                "url": "https://qiita.com/higeaaa/items/3eae75c0d4545d920f2c",
+                "description": "収入・支出を記録し、グラフで可視化する個人向け財務管理アプリ。カテゴリ別の集計も可能。"
+            },
+            {
+                "title": "タスク管理ツール",
+                "url": "https://techacademy.jp/magazine/21852",
+                "description": "タスクの追加、削除、完了の機能があるシンプルなタスク管理ツール。フロントエンドとバックエンドを実装。"
+            }
+        ],
+        "web-developer": [
+            {
+                "title": "自動ニュース集約サイト",
+                "url": "https://qiita.com/higeaaa/items/b186k32e7d9cb0a78431",
+                "description": "複数のニュースサイトから最新記事を自動で取得し、一覧表示するニュース集約サイト。"
+            },
+            {
+                "title": "天気予報Webアプリ",
+                "url": "https://www.webcreatorbox.com/tech/weather-app",
+                "description": "現在地の天気情報や予報を表示する天気予報Webアプリ。外部APIを利用してデータを取得。"
+            },
+            {
+                "title": "短縮URLサービス",
+                "url": "https://qiita.com/mserizawa/items/1d7e5c97bb5cc8df917f",
+                "description": "長いURLを短縮するサービス。生成された短縮URLから元のURLにリダイレクトされる。"
+            }
+        ],
+        "mobile-engineer": [
+            {
+                "title": "簡単なゲームアプリ",
+                "url": "https://codezine.jp/article/detail/7883",
+                "description": "シンプルなゲームアプリ。例として、タップするとジャンプするキャラクターを操作するアプリ",
+            },
+            {
+                "title": "音楽プレイヤーアプリ",
+                "url": "https://tech.recruit-mp.co.jp/mobile/remember_iphone_music_player/",
+                "description": "スマートフォン上で音楽を再生・管理するアプリケーション。プレイリスト機能や再生コントロールを実装。"
+            },
+            {
+                "title": "ランニングトラッキングアプリ",
+                "url": "https://developers-jp.googleblog.com/2018/10/maps-sdk-for-ios-242.html",
+                "description": "GPSを利用してランニングルートや距離、速度を記録するアプリケーション。リアルタイムでの位置情報の取得とデータ分析。"
+            }
+
+        ],
+        "embedded-engineer": [
+            {
+                "title": "温度センサーデータの表示",
+                "url": "https://www.mgo-tec.com/blog-entry-raspberry-pi-adc.html",
+                "description": "温度センサーを使って実際の温度データを取得し、ディスプレイに表示する組み込みシステム。"
+            },
+            {
+                "title": "自動植物水やりシステム",
+                "url": "https://deviceplus.jp/hobby/automatic-watering-system-for-plants/",
+                "description": "土壌の湿度センサーを利用して、植物に水を自動で与えるシステム。マイコンボードを使用。"
+            },
+            {
+                "title": "スマートホーム制御システム",
+                "url": "https://www.rs-online.com/designspark/smart-home-jp",
+                "description": "組み込みデバイスを使って家電や照明を制御するスマートホームシステム。スマートフォンから操作可能。"
+            }
+        ],
+        "data-engineer": [
+            {
+                "title": "データ収集・分析・可視化ツール",
+                "url": "https://qiita.com/keisuke-umezawa/items/6d2ff6d073c8a4aa6c25",
+                "description": "外部APIやスクレイピングでデータを収集し、分析して可視化するデータエンジニアリング用のツール。"
+            },
+            {
+                "title": "リアルタイムダッシュボード",
+                "url": "https://qiita.com/ishizakiiii/items/29e860f607a02052e129",
+                "description": "リアルタイムデータを収集・分析し、ダッシュボードで可視化するシステム。Webフロントエンドを使用。"
+            },
+            {
+                "title": "データベース最適化ツール",
+                "url": "https://www.atmarkit.co.jp/ait/articles/1606/10/news016.html",
+                "description": "データベースのパフォーマンスを測定・最適化するためのツール。クエリやインデックスの改善提案。"
+            }
+        ],
+        "data-scientist": [
+            {
+                "title": "機械学習による画像分類",
+                "url": "https://qiita.com/icoxfog417/items/5fd55fad152231d706c1",
+                "description": "機械学習を使用して画像を分類するアプリケーション。画像データセットを学習し、新しい画像を識別。"
+            },
+            {
+                "title": "自然言語処理による文章要約",
+                "url": "https://qiita.com/shibuiwilliam/items/d27e14fca0e1d0a3b2e2",
+                "description": "自然言語処理技術を用いて長い文章を要約するアプリケーション。抽出型要約や生成型要約が可能。"
+            },
+            {
+                "title": "時系列データ予測",
+                "url": "https://www.procrasist.com/entry/15-time_series_forecasting",
+                "description": "時系列データを分析し、将来のデータを予測するアプリケーション。株価や気象データなどの予測に利用。"
+            }
+        ],
+        "database-engineer": [
+            {
+                "title": "データベース管理ツール",
+                "url": "https://www.atmarkit.co.jp/ait/articles/1703/01/news039.html",
+                "description": "データベースの管理や監視を行うためのツール。パフォーマンスチューニングやクエリ最適化のサポート。"
+            },
+            {
+                "title": "データマイグレーションスクリプト",
+                "url": "https://qiita.com/tarosa/items/9a2f98e1dbb1d8e26a7a",
+                "description": "異なるデータベースシステム間でデータを移行するためのスクリプト。データ構造の変換やエラー処理。"
+            },
+            {
+                "title": "データベースバックアップツール",
+                "url": "https://www.atmarkit.co.jp/ait/articles/1801/22/news018.html",
+                "description": "データベースの定期的なバックアップを行うためのツール。差分バックアップや圧縮機能をサポート。"
+            }
+        ],
+        "machine-learning-engineer": [
+            {
+                "title": "手書き数字認識アプリ",
+                "url": "https://qiita.com/kurumen-b/items/236c625f33dd10a8fd3f",
+                "description": "機械学習を用いて手書き数字を認識するアプリケーション。MNISTデータセットを学習して識別。"
+            },
+            {
+                "title": "レコメンデーションエンジン",
+                "url": "https://qiita.com/keitakurita/items/df3a073d447c10450b2f",
+                "description": "機械学習を利用してユーザーの嗜好に合った商品やコンテンツを推薦するレコメンデーションエンジン。"
+            },
+            {
+                "title": "異常検出システム",
+                "url": "https://qiita.com/FukuharaYohei/items/13d13b1ec0f66bc6b17d",
+                "description": "機械学習を利用してデータの異常を検出するシステム。センサーデータやログデータの異常を検出。"
+            }
+        ],
+        "network-engineer": [
+            {
+                "title": "ネットワーク監視ダッシュボード",
+                "url": "https://qiita.com/suin/items/8ac3c3b3e1a7b3f3d2ff",
+                "description": "ネットワークの状況をリアルタイムで監視し、ダッシュボードで表示するシステム。トラフィック量やエラーを可視化。"
+            },
+            {
+                "title": "VPN構築ツール",
+                "url": "https://qiita.com/terassyi/items/86f25035d7e3b3d8de37",
+                "description": "企業内ネットワークへの安全なアクセスを提供するためのVPN構築ツール。セキュリティやパフォーマンスを考慮。"
+            },
+            {
+                "title": "ネットワークトポロジー可視化",
+                "url": "https://qiita.com/konabuta/items/4b0c8f22d1b63d73e4f0",
+                "description": "ネットワーク機器間の接続状況を自動で検出し、ネットワークトポロジーを可視化するツール。効率的なネットワーク管理を支援。"
+            }
+        ],
+        "security-engineer": [
+            {
+                "title": "Webアプリケーションファイアウォール",
+                "url": "https://qiita.com/hnw/items/3f3d1d66fd4e4dbbb04d",
+                "description": "Webアプリケーションへの不正なアクセスを検出・防御するためのファイアウォール機能を実装。"
+            },
+            {
+                "title": "脆弱性スキャナー",
+                "url": "https://qiita.com/sawanoboly/items/dce7d83952c4f4a1334e",
+                "description": "システムの脆弱性を自動で検出し、修正案を提案するセキュリティスキャナー。"
+            },
+            {
+                "title": "二要素認証システム",
+                "url": "https://www.ipentec.com/document/two-step-authentication-implementation",
+                "description": "ユーザーアカウントのセキュリティを強化するための二要素認証システム。パスワードとワンタイムパスワードを組み合わせた認証。"
+            }
+        ],
+        "devops-engineer": [
+            {
+                "title": "CI/CDパイプライン構築",
+                "url": "https://qiita.com/awakia/items/6497c1e2e7d1c6e9f7b5",
+                "description": "コードの自動テストとデプロイを行うCI/CDパイプラインを構築。効率的な開発プロセスを実現。"
+            },
+            {
+                "title": "自動インフラ構築ツール",
+                "url": "https://qiita.com/minamijoyo/items/1f57c62bed781ab8f4d7",
+                "description": "クラウド上のインフラ構成をコードで管理し、自動的に構築・更新するためのツール。インフラ管理の効率化。"
+            },{
+                "title": "ログ分析ツール",
+                "url": "https://www.sbbit.jp/article/cont1/34888",
+                "description": "システムのログを収集・分析し、異常やパフォーマンス問題を検出するためのツール。効果的な運用監視を支援。"
+            }
+        ],
+        "infrastructure-engineer": [
+            {
+                "title": "サーバーレスアーキテクチャ構築",
+                "url": "https://qiita.com/ijufumi/items/9ad9b4d971c3a0713e15",
+                "description": "サーバーレス技術を利用して、スケーラブルで効率的なインフラアーキテクチャを構築。"
+            },
+            {
+                "title": "コンテナオーケストレーション",
+                "url": "https://qiita.com/y-ohgi/items/0c6a7e4d61e11737bb1e",
+                "description": "コンテナ技術を活用し、アプリケーションのデプロイやスケーリングを効率化するオーケストレーションシステム。"
+            },
+            {
+                "title": "分散ストレージシステム",
+                "url": "https://qiita.com/nejiko96/items/91aa4b4f142d5c041b97",
+                "description": "分散されたノード上でデータを効率的に管理するための分散ストレージシステム。データ耐久性と可用性の向上。"
+            }
+        ],
+        "qa-engineer": [
+            {
+                "title": "自動テストフレームワーク",
+                "url": "https://qiita.com/shimajiri/items/cf7ccf69d184fdb2fb26",
+                "description": "アプリケーションの自動テストを行うためのテストフレームワーク。バグの早期発見と品質の向上。"
+            },
+            {
+                "title": "パフォーマンステストツール",
+                "url": "https://www.sbbit.jp/article/cont1/38766",
+                "description": "システムのパフォーマンスを評価するための負荷テストツール。レスポンスタイムや同時接続数を測定。"
+            },
+            {
+                "title": "モバイルアプリテスト環境",
+                "url": "https://qiita.com/takeshi_sorimachi/items/ee486c653f9ec0490df0",
+                "description": "モバイルアプリのテストを効率化するための環境構築。複数のデバイスやOSに対応したテストを実施。"
+            }
+        ],
+        "game-engineer": [
+            {
+                "title": "2Dアクションゲーム",
+                "url": "https://qiita.com/taptappun/items/0f8e997c6d5494236c8f",
+                "description": "シンプルな2Dアクションゲームの開発。キャラクターの操作や敵キャラクター、アイテムの実装。"
+            },
+            {
+                "title": "パズルゲーム",
+                "url": "https://qiita.com/sorairo_111/items/6f12d6e11b6f1ebe5e5d",
+                "description": "簡単なパズルゲームの開発。ボード上のピースを操作し、目標に合わせて消すゲーム。"
+            },
+            {
+                "title": "シューティングゲーム",
+                "url": "https://qiita.com/2dgames_jp/items/11bb76167fb44b1f6f1e",
+                "description": "縦スクロールシューティングゲームの開発。プレイヤーの操作、敵キャラクター、アイテム、弾の実装。"
+            }
+        ],
+        "uxui-designer": [
+            {
+                "title": "ウェブサイトリデザイン",
+                "url": "https://www.webcreatorbox.com/tech/redesign",
+                "description": "既存のウェブサイトのUI/UXを改善し、ユーザビリティとデザイン性を向上させるリデザインプロジェクト。"
+            },
+            {
+                "title": "モバイルアプリUIデザイン",
+                "url": "https://www.webcreatorbox.com/tech/mobile-ui-design",
+                "description": "モバイルアプリのUIデザインを行う。画面遷移やアイコン、カラースキームの設計。"
+            },
+            {
+                "title": "ダッシュボードデザイン",
+                "url": "https://note.com/motchyslide/n/n5a5482e1ff8a",
+                "description": "データを視覚化するダッシュボードのデザイン。情報を分かりやすく伝えるレイアウトやグラフの設計。"
+            }
+        ],
+        "cloud-engineer": [
+            {
+                "title": "サーバーレスAPI開発",
+                "url": "https://qiita.com/kai_kou/items/c47b8f1a0dfc6d1c6b9d",
+                "description": "クラウド上でサーバーレス環境を利用したAPIの開発。スケーラブルでコスト効率の良いシステム構築。"
+            },
+            {
+                "title": "IoTデータ収集・分析システム",
+                "url": "https://qiita.com/r-wakatsuki/items/2aa7b4a4d4a7f8df35e4",
+                "description": "クラウド上でIoTデバイスからデータを収集・分析するシステム。リアルタイムにデータを扱うアプリケーション。"
+            },
+            {
+                "title": "クラウドネイティブアプリケーション開発",
+                "url": "https://www.atmarkit.co.jp/ait/articles/1806/25/news035.html",
+                "description": "クラウド環境に最適化されたアプリケーションの開発。スケーラビリティや運用効率の向上。"
+            }
+        ],
+        "system-architect": [
+            {
+                "title": "マイクロサービスアーキテクチャ設計",
+                "url": "https://qiita.com/NagaokaKenichi/items/1aa7cf3e0d0e7e9d9a21",
+                "description": "マイクロサービスアーキテクチャを採用したシステム設計。独立したサービス間で連携し、スケーラブルで柔軟なシステム構築。"
+            },
+            {
+                "title": "分散データベース設計",
+                "url": "https://qiita.com/nejiko96/items/91aa4b4f142d5c041b97",
+                "description": "データを複数のノードに分散させることで、耐障害性とパフォーマンスを向上させる分散データベースの設計。"
+            },
+            {
+                "title": "APIゲートウェイ設計",
+                "url": "https://qiita.com/TsuyoshiUshio@github/items/8c3e3c2dd075dcbcfaee",
+                "description": "複数のAPIを統合し、効率的に管理・運用するためのAPIゲートウェイの設計。セキュリティやパフォーマンスの向上。"
+            }
+        ],
+        "hardware-engineer": [
+            {
+                "title": "IoTデバイス開発",
+                "url": "https://www.makershub.jp/learn/iot",
+                "description": "インターネットに接続可能なIoTデバイスの開発。センサーやアクチュエータを組み合わせたハードウェア設計。"
+            },
+            {
+                "title": "ロボット制御システム",
+                "url": "https://qiita.com/rukihena/items/d165b6f9d6e3bd6b2e6e",
+                "description": "モーターやセンサーを利用したロボットの制御システムの開発。アクチュエータの駆動やセンサーデータの処理。"
+            },
+            {
+                "title": "組み込みシステム開発",
+                "url": "https://qiita.com/denkiuo604/items/3e60b2c3e9d7b9f129d8",
+                "description": "特定の機能を持つ組み込みシステムの開発。"
+            },
+        ]
+    }
     const categoryContainer = document.getElementById('category-container')
     const container = document.getElementById('container')
     let jobCards = document.querySelectorAll('.job-card');
@@ -724,6 +1083,7 @@
     const modalMemo = document.getElementById('modal-memo')
     const modalUrl = document.getElementById('modal-url')
     const modalLearning = document.getElementById('modal-learning')
+    const modalPortfolio = document.getElementById('modal-portfolio')
 
     for (let categoryK in category) {
         categoryContainer.innerHTML += `
@@ -837,6 +1197,22 @@
         return html
     }
 
+    function createPortfolio(portfolios){
+        let html = '<div class="modal-label">ポートフォリオ例</div>\n'
+
+        portfolios.forEach((portfolio, index) => {
+            html += `
+            <div class="modal-portfolio-card">
+                <div class="title">${index + 1}. ${portfolio.title}</div>
+                <div class="description">${portfolio.description}</div>
+                <a href="${portfolio.url}" target="_brank" class="url">${portfolio.url}</a>
+            </div>
+            `
+        })
+
+        return html
+    }
+
     function addModalFeature(){
         jobCards = document.querySelectorAll('.job-card');
 
@@ -859,6 +1235,14 @@
             } else {
                 modalLearning.innerHTML = ""
             }
+            
+            // portfolio
+            if (Array.isArray(portfolio[id])){
+                modalPortfolio.innerHTML = createPortfolio(portfolio[id])
+            } else {
+                modalPortfolio.innerHTML = ""
+            }
+            
             
             modal.style.display = 'flex';
 
