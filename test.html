@@ -1,0 +1,40 @@
+<!-- HTMLの要素 -->
+<div class="container">
+    <h2>Title</h2>
+    <p class="description">
+      This is a long description that needs to be collapsed initially.
+    </p>
+    <button class="read-more">Read More</button>
+  </div>
+  
+  <!-- CSS -->
+  <style>
+    .container {
+      width: 300px;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+  
+    .description {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 1s cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+  
+    .description.expanded {
+      max-height: 1000px; /* 適宜最大の高さを指定 */
+    }
+  </style>
+  
+  <!-- JavaScript -->
+  <script>
+    const readMoreButton = document.querySelector('.read-more');
+    const description = document.querySelector('.description');
+  
+    readMoreButton.addEventListener('click', function() {
+      description.classList.toggle('expanded');
+      readMoreButton.innerHTML = description.classList.contains('expanded') ? 'Read Less' : 'Read More';
+    });
+  </script>
+  

@@ -1,0 +1,397 @@
+
+  :root {
+    --software-engineer-color: #f06543;
+  --frontend-engineer-color: #20bf6b;
+  --backend-engineer-color: #0b4f6c;
+  --fullstack-engineer-color: #6c5b7b;
+  --mobile-engineer-color: #a0b4f4;
+  --embedded-engineer-color: #c06c84;
+  --data-scientist-color: #ff847c;
+  --data-engineer-color: #feceab;
+  --database-engineer-color:#f0c243;
+  --machine-learning-engineer-color: #2a363b;
+  --web-developer-color: #99b898;
+  --network-engineer-color: #e84a5f;
+  --security-engineer-color: #3e4149;
+  --devops-engineer-color: #ff8474;
+  --qa-engineer-color: #e8b71a;
+  --game-engineer-color: #338eda;
+  --infrastructure-engineer-color: #b2dbbf;
+  --uxui-designer-color: #f6acc8;
+  --cloud-engineer-color: #1d2021;
+  --system-architect-color: #c5eff7;
+  --hardware-engineer-color: #5c97bf;
+    
+    
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .header {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px 0;
+    background: linear-gradient(45deg, rgb(47, 170, 170), rgb(62, 29, 128), rgb(179, 93, 192));
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    font-weight: bold;
+  }
+
+  .title {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+  }
+
+  .container {
+    width: 70%;
+    margin-top: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: display 0.3s;
+    position:relative ;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .category-btn {
+    width:150px;
+    height: 40px;
+    margin: 5px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.5s;
+  }
+  .category-btn:hover {
+    background-color: rgb(19, 72, 72);
+    border: white;
+    border-width: 5px;
+    color: white;
+    cursor:pointer;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .job-card {
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+  }
+  
+  .job-card.animate {
+    animation: fadeIn 1s ease forwards;
+  }
+
+  .job-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .job-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .job-card[data-job-id="software-engineer"] {
+    border-top: 5px solid var(--software-engineer-color);
+  }
+  
+  .job-card[data-job-id="frontend-engineer"] {
+    border-top: 5px solid var(--frontend-engineer-color);
+  }
+  
+  .job-card[data-job-id="backend-engineer"] {
+    border-top: 5px solid var(--backend-engineer-color);
+  }
+  
+  .job-card[data-job-id="fullstack-engineer"] {
+    border-top: 5px solid var(--fullstack-engineer-color);
+  }
+  
+  .job-card[data-job-id="mobile-engineer"] {
+    border-top: 5px solid var(--mobile-engineer-color);
+  }
+  .job-card[data-job-id="embedded-engineer"] {
+    border-top: 5px solid var(--embedded-engineer-color);
+  }
+  
+  .job-card[data-job-id="data-scientist"] {
+    border-top: 5px solid var(--data-scientist-color);
+  }
+  
+  .job-card[data-job-id="data-engineer"] {
+    border-top: 5px solid var(--data-engineer-color);
+  }
+
+  .job-card[data-job-id="database-engineer"] {
+    border-top: 5px solid var(--data-engineer-color);
+  }
+  
+  .job-card[data-job-id="machine-learning-engineer"] {
+    border-top: 5px solid var(--machine-learning-engineer-color);
+  }
+  
+  .job-card[data-job-id="web-developer"] {
+    border-top: 5px solid var(--web-developer-color);
+  }
+  
+  .job-card[data-job-id="network-engineer"] {
+    border-top: 5px solid var(--network-engineer-color);
+  }
+  
+  .job-card[data-job-id="security-engineer"] {
+    border-top: 5px solid var(--security-engineer-color);
+  }
+  
+  .job-card[data-job-id="devops-engineer"] {
+    border-top: 5px solid var(--devops-engineer-color);
+  }
+  
+  .job-card[data-job-id="qa-engineer"] {
+    border-top: 5px solid var(--qa-engineer-color);
+  }
+  
+  .job-card[data-job-id="game-engineer"] {
+    border-top: 5px solid var(--game-engineer-color);
+  }
+  
+  .job-card[data-job-id="infrastructure-engineer"] {
+    border-top: 5px solid var(--infrastructure-engineer-color);
+  }
+  
+  .job-card[data-job-id="uxui-designer"] {
+    border-top: 5px solid var(--uxui-designer-color);
+  }
+  
+  .job-card[data-job-id="cloud-engineer"] {
+    border-top: 5px solid var(--cloud-engineer-color);
+  }
+  
+  .job-card[data-job-id="system-architect"] {
+    border-top: 5px solid var(--system-architect-color);
+  }
+  
+  .job-card[data-job-id="hardware-engineer"] {
+    border-top: 5px solid var(--hardware-engineer-color);
+  }
+  
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+  .modal-content-header {
+    width: 80%;
+    max-width: 1000px;
+    height: 25px;
+    background: linear-gradient(45deg, rgb(47, 170, 170), rgb(62, 29, 128), rgb(179, 93, 192));
+    border-radius:5px 5px 0px 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+
+  }
+
+  .modal-content {
+    width: 80%;
+    max-height: 90%;
+    max-width: 1000px;
+    justify-content: center;
+    background-color: #fff;
+    padding: 5%;
+    border-radius:0px 0px 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+    overflow-x:hidden;
+  }
+
+  .modal-content.animate {
+    animation: fadeIn 1s ease forwards;
+  }
+
+  .modal-content-header.animate {
+    animation: fadeIn 1s ease forwards;
+  }
+
+  .modal-content h3 {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    background: linear-gradient(45deg, rgb(47, 170, 170), rgb(62, 29, 128), rgb(179, 93, 192));
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .modal-label {
+    width: 100%;
+    background: linear-gradient(45deg, rgb(47, 170, 170), rgb(62, 29, 128), rgb(179, 93, 192));
+    color: white;
+    width:auto;
+    border-radius: 5px 5px 0px 0px;
+    padding: 3px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .modal-description {
+    padding: 20px;
+    background-color: #fff6dd;
+    border-radius: 0px 0px 20px 20px;
+  }
+
+  .modal-description p {
+    margin-bottom: 20px;
+    text-align: start;
+    padding: 5px;
+  }
+  
+  .read-more-btn {
+    border:none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 15px;
+    background:rgb(179, 93, 192);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 1s;
+    cursor: pointer;
+  }
+  
+  .modal-child-container {
+
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+ 
+  }
+
+  .modal-learning {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .modal-learning-card {
+    width: 100%;
+    background-color: #fff6dd;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dcd5bf;
+
+  }
+
+  .modal-learning-card .score {
+    width:20%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background: linear-gradient(45deg, rgb(47, 170, 170), rgb(62, 29, 128), rgb(179, 93, 192));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .modal-learning-card .name {
+    width:60%;
+    font-size: 20px;
+  }
+
+  .modal-learning-card .btn {
+    width:20%;
+  }
+
+  .modal-learning-card .btn a {
+    width:100%;
+    padding: 10px;
+    margin-left: 15px;
+    background:rgb(179, 93, 192);
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 1s;
+  }
+
+  .modal-learning-card .btn a:hover {
+    background:linear-gradient(45deg, rgb(47, 170, 170),rgb(179, 93, 192));
+  }
+  
+  .modal-learning-memo {
+    background-color: #fff6dd;
+    padding: 30px;
+    border-bottom: 2px solid #dcd5bf;
+  }
+
+
+  .close-btn {
+    margin-top: 40px;
+    width: 100%;
+    display: inline-block;
+    background-color: rgb(229, 131, 131);
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 7px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    justify-content: center;
+  }
